@@ -1,0 +1,68 @@
+import java.util.Scanner;
+
+// Display the number of days in a month. The month index is read from the keyboard.
+
+public class Months {
+
+	@SuppressWarnings("resource")
+	public static void main(String[] args) {
+
+		String month = "";
+		int numberOfDays;
+		int monthNumber;
+
+		Scanner input = new Scanner(System.in);
+		int i = 1;						
+        while (i <= 12) {				
+			System.out.println("Enter the month number");
+			System.out.println("\n");
+			i++;
+		monthNumber = input.nextInt();
+
+		if (monthNumber == 4 || monthNumber == 6 || monthNumber == 9 || monthNumber == 11)
+			numberOfDays = 30;
+		else
+			numberOfDays = 31;
+
+		if (monthNumber == 1)
+			month = "Ianuarie";
+
+		else if (monthNumber == 2)
+			month = "Februarie";
+
+		else if (monthNumber == 3)
+			month = "Martie";
+
+		else if (monthNumber == 4)
+			month = "Aprilie";
+
+		else if (monthNumber == 5)
+			month = "Mai";
+
+		else if (monthNumber == 6)
+			month = "Iunie";
+
+		else if (monthNumber == 7)
+			month = "Iulie";
+
+		else if (monthNumber == 8)
+			month = "August";
+
+		else if (monthNumber == 9)
+			month = "Septembrie";
+
+		else if (monthNumber == 10)
+			month = "Octombrie";
+
+		else if (monthNumber == 11)
+			month = "Noiembrie";
+
+		else if (monthNumber == 12)
+			month = "Decembrie";
+
+		System.out.println("Luna" + " " + month + " " + "are" + " " + " " + numberOfDays + " " + "zile");
+
+	}
+
+}
+}
